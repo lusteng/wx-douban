@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/movice/main", 
+    "pages/rank/main", 
+    "pages/rankList/main", 
+    "pages/moviceList/main", 
+    "pages/moviceDetail/main", 
+    "pages/mine/main" 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#67ba62",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fff",
+    "selectedColor": "#67ba62",
+    "borderStyle": "black",
+    "list": [
+        {
+        "text": "首页", 
+        "pagePath": "pages/movice/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      }, {
+        "text": "榜单",
+        "pagePath": "pages/rank/main",
+        "iconPath": "static/tabs/list.png",
+        "selectedIconPath": "static/tabs/list-active.png"
+      },{
+        "text": "我的",
+        "pagePath": "pages/mine/main",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine-active.png"
+      }
+    ], 
+    "position": "bottom"
+  },
+  "usingComponents": {
+    "van-button": "static/vant-weapp/button/index",
+    "van-icon": "static/vant-weapp/icon/index",
+    "van-cell": "static/vant-weapp/cell/index",
+    "van-cell-group": "static/vant-weapp/cell-group/index",
+    "van-toast": "static/vant-weapp/toast/index",
+    "van-rate": "static/vant-weapp/rate/index",
+    "van-loading": "static/vant-weapp/loading/index"
+  }   
+}

@@ -1,0 +1,39 @@
+$db_theme: #67ba62;
+$white_color: #fff;
+$gray_color: #f6f4f8;
+$black_color: #333;
+$active_color: #f2a939;
+$font_gray: #959493;
+
+
+@mixin flex(){
+    display: flex;
+    display: -webkit-flex; 
+}
+
+/*********************
+    遮罩层
+*********************/ 
+@mixin mask($bg: rgba(82,82,82,.6), $zIndex: 1){ 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $bg; 
+    top: 0;
+    left: 0;
+    z-index: $zIndex;
+}
+
+/*********************
+    小图标
+*********************/ 
+@mixin tag($bg: #f7c36f, $wid:42px, $hig: 22px){
+    width: $wid;
+    height: $hig;
+    line-height: $hig;
+    background: $bg;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    color: $white_color;
+}
